@@ -1,0 +1,127 @@
+//Mixin para otimizaçao do codigo e evitar reescritas
+@mixin texto-menu($color, $font-size){
+  color: $color;
+  font-size: $font-size;
+}
+
+@mixin hover-menu($transition,$shadow-color) {
+  transition-duration: $transition;
+  &:hover{
+    text-shadow: 0px 2px 0px $shadow-color;
+  }
+}
+
+@mixin hover-itens($transition,$shadow-colr){
+  transition-duration: $transition;
+  &:hover{
+    box-shadow: 0px 2px 0px 0px $shadow-color;
+  }
+}
+// fim mixim
+
+.menu{
+  background: $color-primaria;
+
+  nav{
+    width: 1200px;
+    padding: $radius-padrao;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+    .logo{
+      img{
+        width: 100px;
+        margin-left: 30px;
+
+        @include hover-itens($transition, $shadow-color);
+      }
+    }//fim logo
+
+    .busca{
+      border-radius: $radius-padrao;
+      
+      input{
+        border-radius: $radius-padrao;
+        border:lightgray;
+        padding: 7px 29px 7px 20px;
+        outline: none;
+        width: 450px;
+        margin-left: 80px;
+  
+
+        @include hover-itens($transition, $shadow-color);
+      }
+  
+      img{
+        width: 15px;
+        display: inline-block;
+        margin: 25px 0px -2px -20px;
+      }
+    }//fim busca
+
+    .login{
+      display: flex;
+      align-items: center;
+      
+      span{
+        a{
+          display: flex;
+          margin-bottom: 2px;
+          justify-content: center;
+          
+          @include texto-menu($color-white, $font-padrao);
+
+          @include hover-menu($transition, $shadow-color);
+        }
+      }
+
+      .header-icon{
+        margin-right: 15px;
+
+        img{
+          border-radius: 100%;
+          @include hover-itens($transition, $shadow-color);
+        }
+        
+      }
+    }//fim login
+
+    .sacola{
+      .header-icon{
+        border-radius: 7px;
+
+        img{
+          @include hover-itens($transition, $shadow-color);
+        }
+      }
+    }//fim sacola
+
+    }//fim nav-1
+
+    .menu-2{
+      background: $color-secundaria;
+      width: 100%;
+      
+      .categorias{
+        ul{
+          li{
+            a{
+              padding: 18px;
+              margin: 0 7px;
+
+              @include texto-menu($color-white, $font-padrao);
+
+              @include hover-itens($transition, $shadow-color);
+            
+              
+            }
+          }
+        }
+        
+      }
+    }
+  }
+  
+  
+
