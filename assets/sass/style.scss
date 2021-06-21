@@ -12,15 +12,15 @@
   padding: 0;
   border: 100%;
   font-size: inherit;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-family: $font-family;
+  font-weight: $font-primaria-weigth;
   vertical-align: baseline;
   text-decoration: none;
   list-style: none;
 }
 
 .container{
-  width: 1024px;
+  width: 1200px;
   margin:0 auto;
   display: flex;
   flex-direction: column;

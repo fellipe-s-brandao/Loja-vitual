@@ -1,13 +1,19 @@
+//variáveis para as cores do site
 $color-primaria: #ffba08;
 $color-secundaria: #f77f00;
 $color-terciaria: yellow;
+$shadow-color: #f77f00;//shadow menu1
+$shadow-color-2: #978775;//shadow menu2
+$color-white: white;//cor fonte
 
+//fonte
 $font-padrao: 15px;
-$color-white: #fff;
+$font-primaria-weigth: 300;
+$font-secundaria-weigth: 400;
+$font-family: "Poppins", sans-serif;
 
+//arredondamento padrao
 $radius-padrao:15px;
 
-
-$shadow-color: #f77f00;
-
+//animação
 $transition: 0.3s;

@@ -7,7 +7,7 @@
 @mixin hover-menu($transition,$shadow-color) {
   transition-duration: $transition;
   &:hover{
-    text-shadow: 0px 2px 0px $shadow-color;
+    text-shadow: 0px 1.7px 0px $shadow-color;
   }
 }
 
@@ -19,12 +19,14 @@
 }
 // fim mixim
 
-.menu{
+header{
   background: $color-primaria;
-
-  nav{
+  width: 100%;
+  
+  .menu-1{
+    background: $color-primaria;
     width: 1200px;
-    padding: $radius-padrao;
+    padding: 15px;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
@@ -97,31 +99,41 @@
       }
     }//fim sacola
 
-    }//fim nav-1
+  }//fim menu 1
 
+  .cor-menu2{
+    background: $color-secundaria;
+    width: 100%;
+    
     .menu-2{
       background: $color-secundaria;
-      width: 100%;
-      
+      width: 1200px;
+      padding: 12px;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+  
+        
       .categorias{
         ul{
           li{
             a{
-              padding: 18px;
+              padding: 15px;
               margin: 0 7px;
-
+              font-weight: $font-secundaria-weigth;
+  
               @include texto-menu($color-white, $font-padrao);
-
+  
               @include hover-itens($transition, $shadow-color);
-            
               
-            }
+              @include hover-menu($transition, $shadow-color-2);
+            }//fim a            
           }
+            
         }
-        
       }
-    }
-  }
-  
-  
+    }//fim menu2
+  }//fim cor menu2
 
+
+}//fim do header
