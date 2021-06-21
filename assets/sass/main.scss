@@ -34,6 +34,8 @@ main{
     .ofertas-do-dia{
       justify-content: space-around;
       margin-bottom: 20px;
+      flex-wrap: wrap;
+      flex: 1 1 200px;
       a{
         img{
           min-width: 200px;
@@ -49,7 +51,7 @@ main{
     }
   
     .desconto{
-      display: grid;
+      display: flex;
       align-items: center;
       justify-content: space-around;
       padding: 10px;

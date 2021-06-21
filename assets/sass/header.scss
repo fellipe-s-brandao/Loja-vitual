@@ -21,15 +21,12 @@
 
 header{
   background: $color-primaria;
-  width: 100%;
   
   .menu-1{
     background: $color-primaria;
-    width: 1200px;
     padding: 15px;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
 
     .logo{
       img{
@@ -103,23 +100,19 @@ header{
 
   .cor-menu2{
     background: $color-secundaria;
-    width: 100%;
     border-bottom: solid 1px $shadow-color-2;
 
     .menu-2{
       background: $color-secundaria;
-      width: 1200px;
-      padding: 12px;
+      padding: 10px;
       justify-content: space-around;
       align-items: center;
-      margin: 0 auto;
         
       .categorias{
         ul{
           li{
             a{
-              padding: 16px;
-              margin: 0 7px;
+              padding: 15px;
               font-weight: $font-secundaria-weigth;
   
               @include texto-menu($color-white, $font-padrao);
