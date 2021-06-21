@@ -4,6 +4,7 @@
 //Componentes
 @import "./variaveis.scss";
 @import "./header.scss";
+@import "./main.scss";
 
 //Reset
 
@@ -11,7 +12,6 @@
   margin: 0;
   padding: 0;
   border: 100%;
-  font-size: inherit;
   font-family: $font-family;
   font-weight: $font-primaria-weigth;
   vertical-align: baseline;
@@ -29,5 +29,5 @@
 
 .row{
   display: flex;
-  flex-direction: row;
+  
 }

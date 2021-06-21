@@ -2,15 +2,23 @@
 $color-primaria: #ffba08;
 $color-secundaria: #f77f00;
 $color-terciaria: yellow;
+
+//cor shadow
 $shadow-color: #f77f00;//shadow menu1
 $shadow-color-2: #978775;//shadow menu2
+$shadow-color-font: lightgray;
+
+//cor font
 $color-white: white;//cor fonte
+$color-font-h1: rgb(93, 104, 114);
 
 //fonte
 $font-padrao: 15px;
 $font-primaria-weigth: 300;
 $font-secundaria-weigth: 400;
 $font-family: "Poppins", sans-serif;
+$h1-weigth: 500;
+$h1-size: 30px;
 
 //arredondamento padrao
 $radius-padrao:15px;
